@@ -1,5 +1,5 @@
 <div align=center><h1>
-  Riskybench: Risk Evaluation & Data Generation
+  Risky-Bench: Probing Agentic Safety Risks under Real-World Deployment
 </h1></div>
 
 ## 📖 Overview
@@ -10,8 +10,6 @@
 - a benchmark dataset collection,
 - data generation scripts for multi-domain / multi-attack-surface settings,
 - and a reproducible evaluation entrypoint (including automated evaluation).
-
-To satisfy anonymous peer-review requirements, this repository removes external links and any identity/institution-related acknowledgements or author information.
 
 ---
 
