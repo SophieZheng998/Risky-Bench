@@ -4,6 +4,8 @@
 
 ## 📖 Overview
 
+![framework](framework.pdf)
+
 **Riskybench** is a risk-oriented benchmark for interactive, task-based agents. It provides:
 - a benchmark dataset collection,
 - data generation scripts for multi-domain / multi-attack-surface settings,
