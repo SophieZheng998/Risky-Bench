@@ -4,7 +4,9 @@
 
 ## 📖 Overview
 
-![framework](framework.png)
+<div align="center">
+  <img src="framework.png" alt="framework" width="800">
+</div>
 
 **Riskybench** is a principle-based safety evaluation framework for interactive, task-oriented agents in real-world deployments. it provides:
 - A principle-grounded safety taxonomy: a systematic collection of domain-agnostic safety principles and context-aware rubrics that map the safety risk space beyond linguistic harm.
