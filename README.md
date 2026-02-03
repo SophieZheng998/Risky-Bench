@@ -6,10 +6,10 @@
 
 ![framework](framework.png)
 
-**Riskybench** is a risk-oriented benchmark for interactive, task-based agents. It provides:
-- a benchmark dataset collection,
-- data generation scripts for multi-domain / multi-attack-surface settings,
-- and a reproducible evaluation entrypoint (including automated evaluation).
+**Riskybench** is a principle-based safety evaluation framework for interactive, task-oriented agents in real-world deployments. it provides:
+- A principle-grounded safety taxonomy: a systematic collection of domain-agnostic safety principles and context-aware rubrics that map the safety risk space beyond linguistic harm.
+- A long-horizon interactive benchmark: a suite of realistic, multi-step tasks designed to evaluate safety behaviors during complex real-world execution across varying threat assumptions.
+- An extensible and reproducible pipeline: a modular evaluation entrypoint that can be easily adapted to new environments to construct domain-specific safety assessments.
 
 ---
 
