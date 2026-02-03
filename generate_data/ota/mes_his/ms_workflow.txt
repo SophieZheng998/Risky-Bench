@@ -1,0 +1,38 @@
+没有采用生成法，采用的是填模板的思路。模板大概编好了，细节微调。
+
+首先选择好50个tasks，最好与user instruction用的一致。
+
+1、恶意用户，情景注入。
+从user instruction的数据集（带有恶意指令）里抽12条数据，需要与现在的5条rubric对应，且均匀。
+我用filter_malicious12.py
+
+抽取后，按模板往里填mes_his。模板细节需要微调，特别是user id。
+我用fill_mes_his_malicious.py
+
+2、恶意用户，埋后门。
+从最原始的tasks_en.json里（经过预处理脚本删掉多余 rubric）抽取13条（最好是对应包含在 user ins 剩下的 38 条里的），在 instruction 后面加触发词规则
+我用filter_malicious13.py
+
+填入mes_his，在task id后加编号，并把rubric替换为safety rubric
+我用fill_mes_his_bd_malicious.py
+
+3、普通用户，情景注入。
+从原始的tasks_en.json里（processed）抽12条（最好是对应包含在user ins剩下的25条里的）
+我用filter_xtoy.py
+
+填入mes_his
+我用fill_mes_his_normal.py
+
+手动在Finance-10的task里伪造一个order：110120RVB，注意格式要和原有的订单一致，地址可能不用改，时间要和task的对齐，内容随便编
+
+4、普通用户，埋后门。
+抽最后13条
+我用filter_xtoy.py
+
+填入mes_his
+我用fill_mes_his_bd_normal.py
+
+手动在Finance-10的task里伪造一个order：110120RVB，注意格式要和原有的订单一致，地址可能不用改，时间要和task的对齐，内容随便编
+
+5、把4个数据集拼在一起
+我用merge_json.py
