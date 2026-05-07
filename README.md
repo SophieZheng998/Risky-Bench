@@ -13,6 +13,10 @@
 - A long-horizon interactive benchmark: a suite of realistic, multi-step tasks designed to evaluate safety behaviors during complex real-world execution across varying threat assumptions.
 - An extensible and reproducible pipeline: a modular evaluation entrypoint that can be easily adapted to new environments to construct domain-specific safety assessments.
 
+## ⚠️ Responsible Use
+
+Risky-Bench is intended solely for safety research and evaluation of agentic systems. The attack strategies and benchmark tasks documented in this repository are based on publicly known techniques and are released to support defensive research. Any use of this benchmark or its associated data to facilitate real-world attacks on deployed systems is strictly prohibited.
+
 ---
 
 ## 📦 Benchmark Dataset Location
